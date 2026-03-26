@@ -3,12 +3,12 @@
   
   <text 
     x="50%" 
-    y="52%" 
+    y="55%" 
     dominant-baseline="middle" 
     text-anchor="middle" 
     fill="white" 
-    font-family="sans-serif" 
-    font-weight="800" 
-    font-size="14"
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-weight="900" 
+    font-size="16"
   >FS</text>
 </svg>

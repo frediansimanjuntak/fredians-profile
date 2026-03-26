@@ -8,26 +8,68 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Ecommerce',
-      component: () => import('../views/Ecommerce.vue'),
+      name: 'Introduction',
+      component: () => import('../views/Introduction.vue'),
       meta: {
-        title: 'eCommerce Dashboard',
+        title: 'Introduction',
+        breadcrumb: 'Introduction',
       },
     },
     {
-      path: '/calendar',
-      name: 'Calendar',
-      component: () => import('../views/Others/Calendar.vue'),
-      meta: {
-        title: 'Calendar',
-      },
-    },
-    {
-      path: '/profile',
-      name: 'Profile',
+      path: '/about-me',
+      name: 'About Me',
       component: () => import('../views/Others/UserProfile.vue'),
       meta: {
-        title: 'Profile',
+        title: 'About Me',
+        breadcrumb: 'About Me',
+      },
+    },
+    {
+      path: '/resume',
+      name: 'Resume',
+      redirect: () => {
+        window.open('https://drive.google.com/file/d/1P7_YrQj2TQQ2rFSd0sOQFaswY9jtFHcy/view?usp=sharing', '_blank')
+        return '/'
+      },
+      meta: {
+        title: 'Resume',
+        breadcrumb: 'Resume',
+      },
+    },
+    {
+      path: '/projects',
+      name: 'Projects',
+      component: () => import('../views/Project.vue'),
+      meta: {
+        title: 'Projects',
+        breadcrumb: 'Projects',
+      },
+    },
+    {
+      path: '/projects/onehandshake',
+      name: 'OneHandshake',
+      component: () => import('../views/Projects/OneHandshake.vue'),
+      meta: {
+        title: 'OneHandshake',
+        breadcrumb: 'OneHandshake',
+      },
+    },
+    {
+      path: '/projects/lilium',
+      name: 'Lilium',
+      component: () => import('../views/Projects/Lilium.vue'),
+      meta: {
+        title: 'Lilium',
+        breadcrumb: 'Lilium',
+      },
+    },
+    {
+      path: '/projects/terrasakti',
+      name: 'Terrasakti',
+      component: () => import('../views/Projects/Terrasakti.vue'),
+      meta: {
+        title: 'Terrasakti',
+        breadcrumb: 'Terrasakti',
       },
     },
     {
@@ -146,6 +188,6 @@ const router = createRouter({
 export default router
 
 router.beforeEach((to, from, next) => {
-  document.title = `Vue.js ${to.meta.title} | TailAdmin - Vue.js Tailwind CSS Dashboard Template`
+  document.title = `Fredian Simanjuntak - ${to.meta.title}`
   next()
 })

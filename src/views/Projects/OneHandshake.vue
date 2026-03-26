@@ -19,7 +19,7 @@ import AdminLayout from '../../components/layout/AdminLayout.vue'
         "Laravel API", 
         "Java (android and iOs)",
         "MySQL and MariaDB", 
-        "Linode Server"
+        "AWS"
     ]
     const responsibilities = [
         "Developed backend services and APIs to support vessel scheduling and operational workflows." ,
@@ -42,12 +42,12 @@ import AdminLayout from '../../components/layout/AdminLayout.vue'
 <template>
     <admin-layout>
         <PageBreadcrumb :pageTitle="currentPageTitle" />
-        <ProjectLayout title="Lilium — HR Management System" description="HR platform designed to manage employee attendance, contracts, leave management, overtime tracking, and payroll processing.">
+        <ProjectLayout title="OneHandshake — Marine Operations Management System" description="OneHandshake is a digital platform designed to manage marine operations and vessel-related activities. The system provides scheduling management for vessels and coordinates operational activities between shipping agents, surveyors, logistics providers, and fuel supply management.">
             <ProjectSection title="Technology Stack">
                 <ProjectStack :stack="stack" />
             </ProjectSection>
             <ProjectSection title="Role">
-                <p class="text-gray-600 dark:text-gray-400"> Backend Developer and Lead Small Backend team</p>
+                <p class="text-gray-600 dark:text-gray-400">Backend Developer and Lead Small Backend team</p>
             </ProjectSection>
             <ProjectSection title="Key Responsibilities">
                 <ProjectList :items="responsibilities" />

@@ -63,7 +63,7 @@
 
               <div>
                 <h4 class="mb-1 text-theme-xl font-medium text-gray-800 dark:text-white/90">
-                  Terasakti
+                  Terrasakti
                 </h4>
 
                 <p class="text-sm text-gray-500 dark:text-gray-400">

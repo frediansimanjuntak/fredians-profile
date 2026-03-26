@@ -253,40 +253,20 @@ const menuGroups = [
         path: "/about-me",
       },
       {
-        icon: DocsIcon,
-        name: "Resume",
-        path: "/resume",
-      },
-      {
         icon: BoxCubeIcon,
         name: "Projects",
         path: "/projects",
+      },
+      {
+        icon: DocsIcon,
+        name: "Resume",
+        path: "/resume",
       },
       {
         icon: ChatIcon,
         name: "Contact Me",
         path: "/contact-me",
       },
-      // {
-      //   name: "Forms",
-      //   icon: ListIcon,
-      //   subItems: [
-      //     { name: "Form Elements", path: "/form-elements", pro: false },
-      //   ],
-      // },
-      // {
-      //   name: "Tables",
-      //   icon: TableIcon,
-      //   subItems: [{ name: "Basic Tables", path: "/basic-tables", pro: false }],
-      // },
-      // {
-      //   name: "Pages",
-      //   icon: PageIcon,
-      //   subItems: [
-      //     { name: "Black Page", path: "/blank", pro: false },
-      //     { name: "404 Page", path: "/error-404", pro: false },
-      //   ],
-      // },
     ],
   }
 ];

@@ -25,18 +25,6 @@ const router = createRouter({
       },
     },
     {
-      path: '/resume',
-      name: 'Resume',
-      redirect: () => {
-        window.open('https://drive.google.com/file/d/1P7_YrQj2TQQ2rFSd0sOQFaswY9jtFHcy/view?usp=sharing', '_blank')
-        return '/'
-      },
-      meta: {
-        title: 'Resume',
-        breadcrumb: 'Resume',
-      },
-    },
-    {
       path: '/projects',
       name: 'Projects',
       component: () => import('../views/Project.vue'),
@@ -70,6 +58,30 @@ const router = createRouter({
       meta: {
         title: 'Terrasakti',
         breadcrumb: 'Terrasakti',
+      },
+    },
+    {
+      path: '/resume',
+      name: 'Resume',
+      redirect: () => {
+        window.open('https://drive.google.com/file/d/1P7_YrQj2TQQ2rFSd0sOQFaswY9jtFHcy/view?usp=sharing', '_blank')
+        return '/'
+      },
+      meta: {
+        title: 'Resume',
+        breadcrumb: 'Resume',
+      },
+    },
+    {
+      path: '/contact-me',
+      name: 'Contact Me',
+      redirect: () => {
+        window.open('https://wa.me/628117779002', '_blank')
+        return '/'
+      },
+      meta: {
+        title: 'Contact Me',
+        breadcrumb: 'Contact Me',
       },
     },
   ],
